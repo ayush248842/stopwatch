@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="icon" type="image/gif" href="Images/logo.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <!-- Lap Container or box to store lap value which is scrolable -->
+    <div class="lap-container">
+        
+    </div>
+
+    <!-- Timer Box -->
+    <div class="timer-container">
+        <div class="stopwatch">00:00:000</div>
+    </div>
+
+    <!-- Timer control buttons box -->
+    <div class="control-box">
+        <button class="btn" onclick="start()"><span class="btn-caption">START</span></button>
+        <button class="btn" onclick="stop()"><span class="btn-caption">STOP</span></button>
+        <button class="btn" onclick="lap()"><span class="btn-caption">LAP</span></button>
+        <button class="btn" onclick="reset()"><span class="btn-caption">RESET</span></button>
+    </div>
+
+    <!-- PDF file download button -->
+    <div class="button download">
+        <a href="pdffile.pdf" download>
+            <i class="fas fa-download"></i>
+        </a>
+    </div>
+
+    <!-- Video link button -->
+    <div class="button video-link">
+        <a href="https://drive.google.com/file/d/1zfTe11-QUIafI37d9ek__1K4_2Q_Cv1f/view?usp=sharing" target="_blank">
+            <i class="fas fa-video"></i>
+        </a>
+    </div>
+
+    <!-- Github link button -->
+    <div class="button github-link">
+        <a href="#">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <!-- External Javascript Link -->
+    <script src="script.js"></script>
+</body>
+</html>

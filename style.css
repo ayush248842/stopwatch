@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #ececec;
+    font-size: 16px;
+	height: 100vh;
+}
+
+/* LAPS */
+/* Container in which laps will store/show */
+
+.lap-container{
+    position: absolute;
+    height: 30rem;
+    width: 15rem;
+    left: 6rem;
+    top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+    background-color: #ececec; 
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12);
+    border-radius: 20px;            
+}
+
+.lap-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Watch */
+
+.timer-container{
+    position: absolute;
+    height: 20rem;
+    width: 30rem;
+    left: 35rem;
+    top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12);
+    border-radius: 20px;            
+}
+
+.timer-container .stopwatch{
+    font-size: 6rem;
+    color: #9f95d8;
+}
+
+.timer-container .stopwatch:hover{
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+/* Controls */
+.control-box{
+    position: absolute;
+    height: 140px;
+    width: 700px;
+    top: 32rem;
+    left: 28rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12);
+    border-radius: 20px;
+}
+
+/* Buttons in Controls */
+
+.btn{
+    height: 40px;
+    width: 100px;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12);
+    border: 2px solid #ececec;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.btn .btn-caption{
+    font-size: 15px;
+    color: #7a7a7a;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.btn:hover .btn-caption{
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+.btn:active{
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+                inset 10px 10px 15px rgba(70, 70, 70, 0.12);                       
+}
+
+.btn:active .btn-caption{
+    color: #9f95d8;
+}
+
+/* Link Buttons */
+.button{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 8px solid #ececec;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.download{
+    top: 12rem;
+    left: 80rem;
+}
+
+.video-link{
+    top: 25rem;
+    left: 80rem;
+}
+
+.github-link{
+    top: 38rem;
+    left: 80rem;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #7a7a7a;
+    font-weight: 700;
+}
+
+.button:hover a{
+    animation: rubberBand;
+    animation-duration: 1s;
+}
+
+.button:active{
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+                inset 10px 10px 15px rgba(70, 70, 70, 0.12);                       
+}
+
+.button:active a{
+    color: #9f95d8;
+}
+
+/* Responsive */
+/* Only for zoom in-out from 100% to 125% */
+
+  @media only screen and (zoom: 1) {
+    html {
+      max-height: 70vh;
+      max-width: 70vw;
+    }
+  }
+
+  @media only screen and (zoom: 1.1) {
+    html {
+        max-height: 80vh;
+        max-width: 80vw; 
+    }
+  }
+
+  @media only screen and (zoom: 1.25) {
+    html {
+        max-height: 100vh;
+        max-width: 100vw; 
+    }
+  }
